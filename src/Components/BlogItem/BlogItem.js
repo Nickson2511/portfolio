@@ -46,10 +46,10 @@ function BlogItem({title, title2, desc, desc2,date, image1, writer, userIcon, im
                         </p>
                         <div className="share-content">
                             <p>Share: </p>
-                            <a href="#" target="_blank" rel="noreferrer">Facebook</a>
-                            <a href="#" target="_blank" rel="noreferrer">Instagram</a>
-                            <a href="#" target="_blank" rel="noreferrer">Twitter</a>
-                            <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+                            <a href="https://www.facebook.com/ooh.ole.9" target="_blank" rel="noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/okwenick/" target="_blank" rel="noreferrer">Instagram</a>
+                            <a href="https://twitter.com/okwenick2511" target="_blank" rel="noreferrer">Twitter</a>
+                            <a href="https://www.linkedin.com/in/nickson-okwemba-35587022a/" target="_blank" rel="noreferrer">LinkedIn</a>
                         </div>
                     </div>
                 </div>
