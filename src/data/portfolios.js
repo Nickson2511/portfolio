@@ -21,7 +21,7 @@ export const portfolios = [
         category: "Responsive Landing Pages with static sites",
         title: "React portfolio website with okwesh",
         image: tabs,
-        link1: "https://landing-page-sigma-seven-61.vercel.app/",
+        link1: "https://responsive-design-template.vercel.app/",
         link2: "https://full-stack-real-estate-youtube-sooty.vercel.app/",
         icon1: git,
         icon2: eye,
