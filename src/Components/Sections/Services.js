@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import styled from 'styled-components'
 import { useTheme } from '../../context/themeContext'
@@ -6,47 +8,66 @@ import ServiceItem from '../ServiceItem/ServiceItem'
 import Title from '../Title/Title'
 import { code, design, desktop } from '../../utils/Icons'
 
-
 function Services() {
-    const theme = useTheme()
-    return (
-        <ServicesStyled id='services' theme={theme}>
-            <Title name={'Services'} desc={'I always Offer Discipline of Projects Showcasing to My Current Clients and do Whatever Instrctions They give me.'} />
-            <div className="services-con">
-                <ServiceItem 
-                    icon={design} 
-                    title={'Web Design'}
-                    bg={theme.colorPurple}
-                    shadow={theme.shadowPurple}
-                    desc={'I love building websites with Reactjs as UI/UX design to An amazing Approach to my Potential Clients.'}
-                />
-                <ServiceItem 
-                    icon={desktop}
-                    title={'Landing Pages'}
-                    bg={theme.colorGreenDark}
-                    shadow={theme.shadowGreen}
-                    desc={'In the Journey of Making Responsive Websites, Landing Pages with HTML, CSS, JavaScript Gives me Additional Credits.'}
-                />
-                <ServiceItem 
-                    icon={code}
-                    title={'Web Development'}
-                    shadow={theme.shadowPrimary}
-                    bg={theme.colorPrimary}
-                    desc={'Curently am Learning about OPENai and how I can Intergrate it To My Projects To A better Approach, MERN Stack is What I have Recently Dived in.'}
-                />
-            </div>
-        </ServicesStyled>
-    )
+  const theme = useTheme()
+  return (
+    <ServicesStyled id='services' theme={theme}>
+      <Title
+        name={'Services'}
+        desc={
+          'I am a competent developer who have collaborated in different projects, I can bring your ideas into a solution.'
+        }
+      />
+      <div className='services-con'>
+        <ServiceItem
+          icon={design}
+          title={'Web Developer'}
+          bg={theme.colorPurple}
+          shadow={theme.shadowPurple}
+          desc={
+            'I love building websites with Reactjs, vuejs as frontend tools that gives a better Approach to my Potential Clients.'
+          }
+        />
+        <ServiceItem
+          icon={desktop}
+          title={'Mobile Applications'}
+          bg={theme.colorGreenDark}
+          shadow={theme.shadowGreen}
+          desc={
+            'I just dived into flutter and discovered that I can completely build mobile applications with it, and DRF as a backend service.'
+          }
+        />
+        <ServiceItem
+          icon={code}
+          title={'Project Collaborations'}
+          shadow={theme.shadowPrimary}
+          bg={theme.colorPrimary}
+          desc={
+            'I am competent in working as a team since I have collaborated in various projects, bringing ideas to a solution.'
+          }
+        />
+      </div>
+    </ServicesStyled>
+  )
 }
 
 const ServicesStyled = styled(SectionLayout)`
-    background: ${(props) => props.theme.colorBgGrad};
-    .services-con{
-        margin-top: 3.5rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-        grid-gap: 2rem;
+  background: ${(props) => props.theme.colorBgGrad};
+  .services-con {
+    margin-top: 5.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 5rem;
+    padding: 0 1rem; /* Add padding to prevent overflow on small screens */
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
-`;
+
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+`
 
 export default Services
