@@ -45,6 +45,11 @@ function About() {
               service='Landing page'
               progress='95'
             />
+            <Progressbar
+              bg={theme.colorGreen}
+              service='Mobile Applications'
+              progress='95'
+            />
           </div>
           <div className='btn-con'>
             <Button
