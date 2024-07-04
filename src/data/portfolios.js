@@ -72,7 +72,7 @@ export const portfolios = [
     category: 'Full stack React express, node.js mysql web app',
     title: 'Full stack realMeHousing Web App',
     image: tabs,
-    link1: 'https://realmehousingfrontend.onrender.com/',
+    link1: 'estate.100jsprojects.com/ ',
     link2: 'https://github.com/Nickson2511/okoaHousing_Kenya.git',
     icon1: eye,
     icon2: git,
